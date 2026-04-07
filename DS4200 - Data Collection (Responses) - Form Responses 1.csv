@@ -1,0 +1,105 @@
+Timestamp,What is your gender?,What is your age?,"Where are you located? (City, State, Country)",What is your major?,"On average, how many hours do you sleep each night?","On a scale of 1–10, how would you rate your sleep quality, with 1 being very poor and 10 being excellent?",Approximately how many hours of physical activity do you engage in each day?,"On average, how many hours each day do you spend doing school work/studying?","On a scale of 1–10, how would you rate your stress level, with 1 being very low and 10 being high?","What is your resting heart rate in beats per minute?
+
+If you are unsure, you can feel your pulse for 10 seconds, and multiply this number by 6",Do you have any sleep disorders?,"If yes to the previous question, which sleep disorder do you have? (ex. Insomnia, Sleep Apnea, etc.)","On average, how many mg of caffeine do you consume each day?
+
+For reference, 1 latte/(85mg), 1 energy drink/(160mg), 1 brewed coffee/(95mg), etc.","On average, what is your screen time each day?"
+2/11/2026 20:14:18,Female,19,Boston,Media Arts Production ,7,7,1,4,7,78,No,,85mg,10 hrs
+2/11/2026 20:15:35,Female,19,"Boston, MA, USA",Data Science and Business Administration ,6,7,2,5.5,6,84,No,,60mg,15hr
+2/11/2026 21:27:42,Female,19,"Boston, MA, USA",Business Administration (finance and international business),8-10,9,1,4,7,87,No,,85,5 hours
+2/11/2026 21:30:19,Female,19,boston,nursing,7,4,3,1,3,60,No,,200,5
+2/11/2026 21:31:09,Female,19,Atlanta Georgia,Data Sci,7,10,1,2-3,7,54,No,,0,6
+2/11/2026 21:37:45,Female,19,"Boston, MA, USA",Independent Recording & Production,8hrs,8,0.5,5hrs,7,90bpm,No,,0,4hrs
+2/11/2026 21:39:22,Female,20,"Boston, MA, US",Economics,10,8,1,1,7,78,No,,85mg,6hrs
+2/11/2026 21:39:57,Male,20,Boston,Business analytics ,7,7,1,3,9,100,No,,200,10
+2/11/2026 21:43:07,Female,19,"Atlanta, GA, US",Marketing & Film ,8,6,1,2,6,71,No,,50,12
+2/11/2026 21:46:32,Female,18,"Boston, MA, US","Politics, philosophy, economics, and business admin",7,5,1,4,8,80,No,,85,8
+2/11/2026 21:50:51,Female,19,Boston ,Finance ,5-6hrs,7,2hrs,8hrs,5,102,No,,95mg,8hrs
+2/11/2026 21:51:52,Female,20,new york,Nursing,6,8,1,4,5,80,No,,0,6hrs
+2/11/2026 21:52:06,Female,20,"Shanghai,China",Economic statistics,7,8,0.25,7,8,80,No,,85mg,10h
+2/11/2026 21:53:37,Female,19,"London, UK",BSc Psychology with Education,6,9,0.5,6,6,66,No,,150,8 hours
+2/11/2026 21:53:58,Male,19,Boston,Data Science + Finance,8,5,1 Hour,2 Hours,7,95,No,,0,6 Hours
+2/11/2026 22:02:15,Male,21,Boston,ds and econ,7,4,1,3,5,87,Yes,insomnia,none,9
+2/11/2026 22:04:48,Female,19,"Boston, MA, U.S.",Neuroscience,8,6,1,4,3,72,No,,85,8
+2/11/2026 22:09:22,Female,19,"Boston, Ma, US",CS and Design,9,7,1,6,7,70,No,,85,4
+2/11/2026 22:10:42,Female,20,Boston ,Health Science ,6,5,2,8,2,:),No,,95mg,2 hours
+2/11/2026 22:12:22,Male,18,"Boston, MA, US",CS and Math,7,5,0,1,8,80,Yes,Insomnia,0,14
+2/11/2026 22:12:36,Female,23,boston,Boston,7h,8,3h,4h,6,70,No,,0,6h
+2/11/2026 22:13:09,Male,24,"Boston, Massachusetts, United States",Quantitative Finance,8,9,1,4,7,90,No,,95mg,6
+2/11/2026 22:13:36,Male,21,Chicago US,Econ (Data seince track),7-8,7,1,5,8,66,No,,0, a lot ( im guessing 7 hrs)
+2/11/2026 22:14:13,Female,20,"US, Minnesota",Computer Science,7,9,1,7,5,96,No,,0,10
+2/11/2026 22:28:17,Female,20,"Toronto, Ontario, Canada","Biodiversity and Conservation Biology major, Forest Conservation major",7,4,0.5,2,6,72,Yes,Insomnia,85,11h
+2/11/2026 22:28:28,Female,19,Los Angeles ,Computer Engineering,10H,8,1H,5H,7,78,No,,i dont drink coffeee,6hours
+2/11/2026 22:50:08,Male,19,America ma boston,ds and ba,emm 6-8,8,30mins,3-4h,2,90？,No,,0000,24h
+2/11/2026 23:06:09,Female,19,"Sydney, New South Wales, Australia ",Digital Media&Art History,7,8,1.5,4-5,5,69,No,none,85mg,4.5-5hr
+2/11/2026 23:35:12,Female,20,Davis CA,comp sci,8,4,2-8,1-6,5,13×10=130(? ,Yes,insomnia,0-50,8
+2/11/2026 23:37:14,Male,19,San Deigo,Stats,8,7,1,6,7,idk,No,,80,14
+2/12/2026 1:24:51,Female,18,boston,explore program,6,4,0.5,2,7,72,Yes,insominia ,100mg,10h
+2/12/2026 1:26:30,Male,19,Boston,Engineering ,6,1,1 hrs,7hrs,8,70,Yes,,40mg/day,15
+2/12/2026 1:33:32,Female,20,"Bloomington,  Indiana, USA",Business ,8,8,2,4,3,67,No,,0,6
+2/12/2026 1:44:52,Male,21,Ithaca,Finance,6,7,16,8,7,50,Yes,insominia,no,15hr
+2/12/2026 2:22:46,Male,20,"Berkeley, California",EECS,7,9,2,4,5,67,No,,0,12 hours
+2/12/2026 3:24:52,Male,20,boston,econ,7,10,12,4,5,140,No,,200,12
+2/12/2026 7:12:05,Male,18,London,Business Analytics,7,6,2,3,5,66,No,,0,8hr
+2/12/2026 7:55:22,Male,20,Boston,Accounting,6,5,0,3,7,77,Yes,Insomnia,0,5 hours
+2/12/2026 9:51:38,Female,19,"Waltham, MA, US",Biology,7,6,0,3,8,62,No,,85,8
+2/12/2026 9:55:05,Female,20,"Oxford, Oxfordshire, UK",Economics,8,8,2 if walking counts,3,7,78,No,,Between 2-3 latte,6 hrs
+2/12/2026 10:31:12,Male,20,"Bloomington, IN, USA",Finance,7,7,1,2,6,60,No,,50,8
+2/12/2026 11:15:11,Female,20,"Staten Island, New York, USA",Business administration and management with the concentration in marketing,6,6,1.5 hour,5 hours,4,66,No,,0,5 hour 
+2/12/2026 11:54:52,Female,21,"Boston, MA, USA",Finance & Econ,6,7,2,3,9,70,No,,85 mg,5 hrs
+2/12/2026 11:57:20,Female,21,"Boston, MA, USA",Supply Chain,8,4,2,4,6,80,No,,<85,10 hr
+2/12/2026 11:58:09,Male,20,Boston,Cs + math,7.5,8,1,10,5,72,No,,200mg,5hrs
+2/12/2026 11:59:01,Male,20,"Boston, MA, USA",Computer Science + Business Administration,7,7,1.5,5,4,96,No,,30mg,9hrs
+2/12/2026 11:59:27,Female,19,"Boston, MA, US",CS & Design,7,5,1,9,7,78,No,,1 matcha latte (70mg),6h
+2/12/2026 12:05:08,Male,20,"Boston, MA, USA",Computer Science and Design,6,7,1,5,7,68,No,,260mg,6
+2/12/2026 12:37:40,Male,22,"Kissimmee, Florida, United States ",Business ,7,8,14,2,8,69,No,,85,4
+2/12/2026 12:44:16,Female,22,"Staten Island, NY, United States",Psychology,7,3,4,3,7,66,No,,0,5 hours
+2/12/2026 12:47:49,Female,21,"Staten Island, New York ",Interior Design,7,7,1,8,9,60,No,,190,4 hours
+2/12/2026 12:48:19,Female,19,"Boston, MA, USA ",Cs + business admin ,6,7,1,8-10,7,78,Yes,Insomnia ,190mg ,3
+2/12/2026 13:24:59,Male,20,"Boston, MA, USA",Computer Science and Psychology,7,7,2,5,1,55,No,,0,3 hours
+2/12/2026 13:49:36,Male,23,Boston,CE/CS,7.5,6,2,9,6,50,No,,40,10 hrs
+2/12/2026 23:20:51,Female,20,"Boston, MA",Computer Science,7,7,1,8,7,75,No,,128,5 hrs
+2/13/2026 23:22:04,Male,20,"Berkeley, California, USA",Economics,6,6,1,4,6,78,No,,200,5
+2/14/2026 15:18:27,Female,22,"Boston, MA, USA",Behavioral Neuroscience,9,5,1,4,9,100,No,,0,5
+2/16/2026 19:25:40,Male,21,"Bloomington, IN United States",Accounting & Finance,8,4,2,4,8,71,Yes,Insomnia,200mg,5
+2/17/2026 12:18:43,Female,22,"Boston, MA, USA",Health Science,7,6,1,3,5,70,No,,160,5
+2/17/2026 12:19:36,Male,22,"Boston, MA, USA",Biochemistry,6,4,2,5,7,72,No,,0,8
+2/18/2026 17:22:20,Female,24,"Baltimore, MD, USA",Finance,8,8,1,2,7,85,No,,0,10
+2/18/2026 18:01:40,Female,20,Boston Massachusetts U.S.,Business administration ,10,7,1,5,6,78,No,,0,7-8 Hours
+2/18/2026 18:05:55,Male,19,"Boston, MA, US",CS & Game development ,8,7,2,2,5,60,No,,0,14
+2/18/2026 19:30:20,Female,20,New York,Econ,6,10,1,3,8,80,No,,0,5hr
+2/18/2026 20:22:59,Male,20,Seattle,Applied Math,6,8,1,5,8,78,No,,None,8-9 hours
+2/19/2026 15:10:10,Male,20,"Cambridge, Cambridgeshire, UK",Biology,8,10,0,4,6,60,No,,>100mg,>10 hours
+4/2/2026 16:15:45,Female,19,"Oak Hill, VA, USA",Computer Science ,6 hours ,7,2,4,8,70 bpm,No,,1 latte ,8 hrs 
+4/2/2026 16:34:11,Female,20,"Allston, MA, US",Business ,9,6,0.5,10,8,66,No,,Just water,5hrs
+4/3/2026 20:24:12,Female,21,"Boston, MA, USA",Computer Engineering  ,8.25,9,1.5,5.5,3,49,No,,150mg,"4:35hrs (phone only, I’m on the computer a lot at work too tho) "
+4/3/2026 21:37:43,Female,21,"Boston, Ma, USA ",International business,8,8,1-2,1-2,2,84,No,,85,5-6hrs
+4/3/2026 22:31:43,Female,20,"Boston, MA, USA",Computer Science and Economics ,7,9,1,3,7,90 bpm,No,,0,5
+4/4/2026 10:01:47,Female,19,"Philadelphia, PA, USA","History, Culture, and Law",7,6,2,4,8,72 bpm,No,,170mg,6 hours
+4/4/2026 12:02:00,Female,22,"Boston, MA, USA",Computer Science,6,5,1,3-4,7,77,Yes,Insomnia,200 mg,5-6
+4/4/2026 13:25:53,Female,20,"Boston, MA USA",Chemistry,7-9,7,2-4 hours,2-3 hours,8,90,No,,0-80,5-6 hrs
+4/5/2026 22:47:24,Male,19,"Wilton, CT US",Turfgrass,7.5,7,1,5,5,48,No,,0,5 hours
+4/5/2026 22:48:15,Male,20,Columbus Ohio US,Animal Science,8,8,1,8,7,60,No,,0,2
+4/5/2026 22:50:14,Male,19,Millersburg Ohio US,Agronomy,8,8,2,5,5,55,No,,0,4 hours 
+4/5/2026 22:51:42,Female,19,Beaver Ohio US,Anima Science,7,9,2,5,6,60,No,,0,5 hours
+4/5/2026 23:14:20,Male,21,Boston,Chemical engineering,7,6,1,4,7,65,No,Insomnia,150,5 hrs
+4/5/2026 23:15:36,Female,19,Boston,Political science,9,9,1,2,3,65,No,,0 (I rarely drink coffee),3 hrs
+4/5/2026 23:17:35,Male,19,"Basel, Switzerland","Bachelor of Arts, early music",8,9,0.5,13,1,78,No,,2 espressos (one in morning one after dinner),9
+4/5/2026 23:19:07,Male,20,London Uk,Business,6,6,2,2,4,83,No,,160,13
+4/5/2026 23:20:23,Female,24,Los Angelos US,media production,8,6,0,5,8,77,Yes,insomnia,2 latte 170mg,8
+4/5/2026 23:22:12,Female,19,Chicago US,Art History,8,4,1,7,7,85,No,,170mg,13
+4/5/2026 23:33:42,Female,20,"Lancaster, PA, USA",architecture ,7,8,1-2,4,7,68,No,,200mg,4
+4/5/2026 23:40:56,Male,21,"Bloomington, IN, USA",Finance,8,8,1.5,3,6,55,No,,100,6
+4/5/2026 23:41:55,Male,20,"Bloomington, Indiana, USA",Finance,6,9,1,4,4,65,No,,50,13
+4/5/2026 23:42:41,Male,20,"Bloomington, IN, USA",Accounting,8,7,1,4,4,60,No,,100,8
+4/5/2026 23:45:02,Female,21,"Bloomington, IN, USA",Supply Chain,8,9,1.5,7,5,68,No,,0,8
+4/6/2026 2:17:56,Female,21,"Boston, MA, ",Data Science and Finance,5,8,1,2,6,70,No,,225mg,4
+4/6/2026 5:06:06,Female,20,Boston ,Bioengineering and biochemistry ,7,6,2,8,8,91,No,,170,6
+4/6/2026 9:50:05,Female,21,"Westborough, MA, USA ",Biology ,7,8,1,3,5,66,No,,95mg,3 hrs 
+4/6/2026 15:29:33,Female,22,"New York, New York, USA",Biology,8,7,1,5,7,64,No,,0,6
+4/6/2026 15:31:17,Female,21,"New York, New York, USA",Bioengineering,6,4,2,4,5,98,No,,160,8
+4/6/2026 21:38:10,Male,20,"Staten Island, NY, USA ",Psychology,9,9,3,3,4,60,No,,95,4
+4/6/2026 21:39:10,Female,21,"Brooklyn, New York, USA",Math,6,3,0,5,8,80,No,,320,6
+4/6/2026 21:40:58,Female,21,"Brooklyn, NY",Business,8,7,1.5,3,2,55,No,,85,4 hours
+4/6/2026 21:42:06,Female,22,"Brooklyn, NY, USA",Marine Biology,7,5,1,4,5,75,No,,95,2 hours
+4/6/2026 21:43:38,Male,21,"Brooklyn, NY, USA",Computer science,6,4,3,5,6,60,No,,0,7 hours
+4/6/2026 21:45:54,Male,22,"Staten Island, NY, USA",Nursing,7.5,7,2.5,4,7,78,No,,200,3 hrs
