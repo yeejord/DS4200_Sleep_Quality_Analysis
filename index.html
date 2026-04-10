@@ -101,10 +101,8 @@
             </table>
         </div>
 
-    <div class='container'>
-        <div class='image'>
-            <iframe src="map.html" width="200%" height="520px" frameborder="0"></iframe>
-        </div>
+    <div class='container' style="overflow: hidden;">
+        <iframe src="map.html" width="100%" height="520px" frameborder="0" scrolling="no"></iframe>
     </div>
     <p>
         Discuss what map shows about our dataset
@@ -118,7 +116,17 @@
             <iframe src="heatmap.html" width="100%" height="500px" frameborder="0"></iframe>
         </div>
         <div class='text'>
-            <p>text about scatterplot</p>
+            <p>
+                The first visualization we will explore is a heatmap displaying the relationship between hours of sleep 
+                and self-reported sleep quality among participants in our dataset. Each cell represents the number of 
+                participants who reported a given combination of sleep hours and sleep quality, with darker teal indicating a 
+                higher concentration of participants. The chart reveals that the majority of participants in our dataset fall 
+                within the 6 to 8 hour range of sleep, with sleep quality ratings generally between 6 and 9. Notably, the relationship
+                between hours of sleep and sleep quality does not appear to be strictly linear. Rather, it may follow a slight quadratic pattern,
+                in which 6 to 8 hours of sleep represents an optimal range, with both lower and higher sleep durations associated with 
+                comparatively lower quality ratings. This suggests that sleeping too little or too much may each have a negative 
+                effect on self-reported sleep quality.
+            </p>
         </div>
     </div>
 
