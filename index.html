@@ -100,6 +100,12 @@
             </tbody>
             </table>
         </div>
+    <p> The dataset was collected via a survey consisting of 100 responses across 14 variables. The survey was sent out to college-
+        aged undergraduate students across many different locations, including globally. The survey was conducted using a Google Form,
+        and responses were automatically populated to a Google Sheet, which was then exported as a .csv file. As outlined above, 
+        the attributes capture both demographic information, including age, location, sex, and area of study, as well as lifestyle 
+        factors such as sleep quality, stress level, study time, and physical activity, among others.
+    </p>
 
     <div class='container' style="overflow: hidden;">
         <iframe src="map.html" width="100%" height="520px" frameborder="0" scrolling="no"></iframe>
@@ -132,7 +138,16 @@
 
     <div class='container'>
         <div class='text'>
-            <p>text about scatterplot</p>
+            <p>
+                The second visualization we created is an interactive scatter plot that displays the relationship between study time and
+                average hours of sleep per night. The scatter plot is color-coded by area of study, as we categorized self-reported majors
+                into various broader categories. The dropdown menu allows users to select a particular area of study, and there is also a tooltip
+                upon hovering over a point that displays sleep quality and exact major. Based on this diagram, major category does not appear to be
+                a strong predictor of either sleep or study habits, suggesting that other factors may be more influential. There is also no strong
+                trend between hours of sleep and hours spent studying. The majority of points fall within a similar range, clustering between 6-8 hours
+                of sleep and 2-8 hours of study time. While one might expect that a higher study time correlates with lower sleep time, the data does not 
+                support this. This suggests that sleep habits among students may be driven by more individual lifestyle factors than academic workload.
+            </p>
         </div>
         <div class='image'>
             <iframe src="scatter.html" width="100%" height="500px" frameborder="0"></iframe>
@@ -148,7 +163,13 @@
             <script src='main.js'></script>
         </div>
         <div class='text'>
-            <p>hi </p>
+            <p>
+                The next figure is a stacked barplot that displays hours of sleep, study time, physical activity, and screen time by sex. This was
+                created using D3. The most meaningful takeaway from the figure is the difference between male and female students in screen time.
+                The males averaged significantly more hours in screen time, with males at approximately 8 hours, compared to females at roughly 6 hours. 
+                The other factors of sleep, physical activity, and study time appear to be relatively similar between the two groups. Resultedly, screen 
+                time may be worth exploring further as a potential factor of impacting sleep quality, given how much it dominates the male bar in particular.
+            </p>
         </div>
     </div>
 
