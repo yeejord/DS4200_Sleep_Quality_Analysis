@@ -36,6 +36,13 @@
 
     <h2>Introduction to the Data</h2>
 
+    <p> The dataset was collected via a survey consisting of 100 responses across 14 variables. The survey was sent out to college-aged 
+        undergraduate students across many different cites, states, and countries globally. The survey was conducted using a Google Form,
+        and responses were automatically populated to a Google Sheet, which was then exported as a .csv file. As outlined above, 
+        the attributes capture both demographic information, including age, location, sex, and area of study, as well as lifestyle factors
+        that are commonly associated with sleep quality, such as stress level, study time, and physical activity.
+    </p>
+
      <div class="center">
         <table class="tg">
             <thead>
@@ -100,60 +107,47 @@
             </tbody>
             </table>
         </div>
-    <p> The dataset was collected via a survey consisting of 100 responses across 14 variables. The survey was sent out to college-
-        aged undergraduate students across many different locations, including globally. The survey was conducted using a Google Form,
-        and responses were automatically populated to a Google Sheet, which was then exported as a .csv file. As outlined above, 
-        the attributes capture both demographic information, including age, location, sex, and area of study, as well as lifestyle 
-        factors such as sleep quality, stress level, study time, and physical activity, among others.
+
+    <h2>Sleep Quality Data Analysis</h2>
+    
+    <h3>Geographically</h3>
+    <p>
+        The interactive map below visualizes average sleep quality and study time across different regions. The dropdown menu
+        can be used to switch between either a worldwide or a U.S.-focused view. For either mode, you can hover over the map to display sleep quality, 
+        sleep duration, and study time for any location where data was collected from.
+
     </p>
 
     <div class='container' style="overflow: hidden;">
         <iframe src="map.html" width="100%" height="520px" frameborder="0" scrolling="no"></iframe>
     </div>
-    <p>
-        This interactive map visualizes average sleep quality and study time across different countries. By clicking on a highlighted country, you can view its corresponding average sleep quality and study hours.
-        Use the dropdown menu to switch to a U.S.-focused view. In this mode, the map displays sleep quality, sleep duration, and study time across different regions within the United States.
+    
+    <h3>What Our Data Reveals at a Global Level</h3>
 
-    </p>
-    <h2>What the Data Shows</h2>
+    <h4>Globally by Country</h4>
+    
     <p>
-    Global Data 
-    </p>
-
         This visualization presents average sleep quality and study time across a selection of countries and U.S. states. 
         At the global level, the data compares how students in different countries balance sleep and academic effort. 
         From all of our collected data, the average sleep quality on the scale of 1-10 is 6.80, the average study hours is 4.53 hrs/day.
         Some interesting findings revealed from the world map are : even though Canada displays the shortest average study hours (2), it also have the lowest average sleeping quality of 4.
         On the other hand, countries like China and Switerland show a significantly higher average study hours (7hrs & 13 hrs) while maintaining a high sleep quality (8 & 9).
-        This was a surprising finding, as our initial hypothesis expected that higher study hours would correlate with lower sleep quality, but the data does not support this assumption.
+        This was a surprising finding, as our initial hypothesis expected that higher study hours would correlate with lower sleep quality, but the data that we collected does not support this assumption.
         Compared to the average, UK seem to have a slightly higher sleep quality and less sleeping hour which may suggest a balanced lifestyle. 
         Overall, the global data suggests that there is no clear inverse relationship between study hours and sleep quality, and that other factors may be influencing these outcomes in different countries.
-    
-    <p>   
-    US Data   
     </p>
+        
+    <h4>By State in the U.S.</h4>
+
     <p>   
-    For US data, the map provides a more detailed breakdown by state, showing average sleep quality, sleep duration, and study hours. 
-    The data of US students are Average Sleep Hours:   7.26, Average Study Hours:   4.48, and Average Sleep Quality: 6.73
-    The results of our map highlight noticeable variation across states. For instance, Minnesota shows both high sleep quality and high study hours, 
-    while states like Illinois and New York have comparatively lower sleep quality (5.5 & 6.21) despite moderate to high study time. 
-    When it gets to States in the southeast side of US, they generally have higher sleep quality and less study hours which may suggest a more relaxed lifestyle. On the other hand, states in the northeast side of US generally have higher study hours and lower sleep quality which may suggest a more stressful lifestyle.
-
-     </p>
-
-    <p>
-    Overall, the data shows that sleep and study time are not always in conflict. In some regions, students 
-    are able to study more while still maintaining good sleep quality, suggesting that factors like time 
-    management and lifestyle play an important role. This challenges the idea that studying more always 
-    means sleeping less. At the same time, differences across countries and states show that this balance 
-    is not consistent everywhere. In some places, higher study time is associated with lower sleep quality, 
-    while in others the two seem to coexist. This suggests that sleep and study habits are influenced not 
-    just by time spent studying, but also by environment, culture, and daily routines.
-
+        For US data, the map provides a more detailed breakdown by state, showing average sleep quality, sleep duration, and study hours. 
+        The data of US students are Average Sleep Hours:   7.26, Average Study Hours:   4.48, and Average Sleep Quality: 6.73
+        The results of our map highlight noticeable variation across states. For instance, Minnesota shows both high sleep quality and high study hours, 
+        while states like Illinois and New York have comparatively lower sleep quality (5.5 & 6.21) despite moderate to high study time. 
+        When it gets to States in the southeast side of US, they generally have higher sleep quality and less study hours which may suggest a more relaxed lifestyle. On the other hand, states in the northeast side of US generally have higher study hours and lower sleep quality which may suggest a more stressful lifestyle.
     </p>
 
-    <h2>Overview of Sleep Quality</h2>
-
+    <h3>Sleep Quality by Factor</h3>
 
     <div class='container'>
         <div class='image'>
@@ -174,7 +168,7 @@
         </div>
     </div>
 
-    <div class='container'>
+    <div class='container' style="gap: 30px">
         <div class='text'>
             <p>
                 The second visualization we created is an interactive scatter plot that displays the relationship between study time and
@@ -188,32 +182,33 @@
             </p>
         </div>
         <div class='image'>
-            <iframe src="scatter.html" width="100%" height="500px" frameborder="0"></iframe>
+            <iframe src="scatter.html" width="100%" height="420px" frameborder="0"></iframe>
         </div>
     </div>
 
+    <h3>
+        Hours of Studying, Physical Activity, Sleep, and Screen Time by Sex
+    </h3>
     <div class="container">
-        <div class='image'>
-            <h3>
-                Hours of Studying, Physical Activity, Sleep, and Screen Time by Sex
-            </h3>
+        <div class='image' id='chart'>
             <script src='https://d3js.org/d3.v7.min.js'></script>
             <script src='main.js'></script>
         </div>
         <div class='text'>
             <p>
-                The next figure is a stacked barplot that displays hours of sleep, study time, physical activity, and screen time by sex. This was
-                created using D3. The most meaningful takeaway from the figure is the difference between male and female students in screen time.
-                The males averaged significantly more hours in screen time, with males at approximately 8 hours, compared to females at roughly 6 hours. 
-                The other factors of sleep, physical activity, and study time appear to be relatively similar between the two groups. Resultedly, screen 
-                time may be worth exploring further as a potential factor of impacting sleep quality, given how much it dominates the male bar in particular.
+                The next figure is a stacked barplot that displays hours of sleep, study time, physical activity, and screen time 
+                by sex. This was created using D3. Overall, male participants average slightly more total hours across all categories 
+                than female participants, with males at approximately 23 hours compared to females at roughly 21 hours. The most meaningful
+                takeaway from the figure is the difference between male and female students in screen time, with males averaging approximately
+                8 hours compared to females at roughly 6 hours. The other factors of sleep, physical activity, and study time appear to 
+                be relatively similar between the two groups, making screen time stand out as the primary distinguishing factor. Resultedly,
+                screen time may be worth exploring further as a potential factor impacting sleep quality, given how much it dominates the 
+                male bar in particular.
             </p>
         </div>
     </div>
 
-    <div class='container'>
-        <div class='text'>
-
+    <div class="container">
             <p>The four histograms visualize the distributions of key variables in the dataset: daily screen time (in hours), sleep quality (rated from 1 to 10),
                 daily caffeine consumption (in mg), and resting heart rate (in BPM). Screen time shows a right-skewed distribution, with most values concentrated between about 4 and 10 hours 
                 and a few high outliers exceeding 15 hours. Sleep quality appears roughly symmetric and centered around a mean of approximately 6 to 8, indicating that most participants report 
@@ -225,13 +220,32 @@
                 This indicates that people tend to have similar sleep outcomes despite differences in their daily habits, which raises questions about what factors actually drive changes in sleep quality and connects 
                 to our research on understanding these influences.
             </p>
-        </div>
-        <div class='image'>
-            <img src="histograms_lifestyle.png" width="85%" alt="histogram"/>
-        </div>
+            <img src="histograms_lifestyle.png" width="55%" alt="histogram" style="float: right; margin-left: 20px; margin-bottom: 10px;"/>
     </div>
 
     <h2>Summary and Additional Work</h2>
+
+    <p>
+        Looking across all of our visualizations, the main takeaway is that sleep quality among college students does not appear to be 
+        driven by any single factor. Study time, major category, and even total hours of sleep do not show a consistent or strong relationship
+        with how well students report sleeping. Instead, the data suggests that sleep quality is shaped by a combination of lifestyle behaviors 
+        that vary widely across individuals. Screen time in particular stood out as a notable differentiator, especially between male and female 
+        participants, and may be worth investigating further as a potential influence on sleep quality.
+    </p>
+    <p>
+        This pattern holds even when looking at the data geographically. Across both countries and U.S. states, sleep and study time are not
+        always in conflict, with some regions showing students who are able to study more while still maintaining good sleep quality, suggesting 
+        that factors like time management and lifestyle play an important role. This challenges the idea that studying more always means sleeping less. 
+        At the same time, differences across countries and states show that this balance is not consistent everywhere, with some places showing higher 
+        study time associated with lower sleep quality, while in others the two seem to coexist. Taken together, the global and lifestyle data both point
+        to the same conclusion: sleep quality is a multifaceted outcome influenced not just by time spent studying, but also by environment, culture, 
+        and daily routines.
+    <p>
+        If we were to continue this research, a larger and more diverse dataset would allow for stronger conclusions. A lot of our current dataset was
+        collected from students living in Boston, and other locations on our map had fewer participants. If we could increase our data, we might start
+        to see stronger trends related to different places, majors, or factors that we're not quite able to see now.
+    </p>
+
 </body>
 </html>
     

@@ -9,7 +9,7 @@ const colors = ['#dbdb8d', '#aec7e8', '#ff9896', '#ffbb78'];
 let width = 600,
 height = 400;
 let margin = { top: 50, bottom: 60, left: 60, right: 160 };
-let svg = d3.select('body')
+let svg = d3.select('#chart')
 .append('svg')
 .attr('width', width)
 .attr('height', height);
