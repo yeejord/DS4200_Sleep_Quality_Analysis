@@ -5,14 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleep Quality and its Related Factors Study</title>
     <link href="style.css" rel="stylesheet" />
+    <style>
+        /* Full-width graph sections */
+        .graph-section {
+            width: 100%;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .graph-container {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .graph-description {
+            width: 100%;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .graph-description p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .graph-description strong {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Ensure iframes are responsive */
+        .graph-container iframe {
+            display: block;
+        }
+        
+        /* Override previous container styles for graph sections */
+        .graph-section.with-image {
+            flex-direction: column;
+            gap: 0;
+        }
+    </style>
 </head>
 <body>
 
-   <span style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-        <img src="moon.png" alt="moon" width="50" height="50"/>
-        <h1>Sleep Quality and its Related Factors</h1>
-        <img src="moon.png" alt="moon" width="50" height="50"/>
-    </span>
+    <div>
+        <span style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <img src="moon.png" alt="moon" width="50" height="50"/>
+            <h1>Sleep Quality and its Related Factors</h1>
+            <img src="moon.png" alt="moon" width="50" height="50"/>
+        </span>
+        <span>
+            <h4 style="display: flex; align-items: center; justify-content: center; gap:20px;">
+                <sn>Northeastern University</span>
+                <span>|</span>
+                <span>DS4200 Final Project</span>
+                <span>|</span>
+                <span>Francesca Licciardello, Janie Lu, & Jordyn Yee</span>
+            </h4>
+        </span>
+    </div>
 
     <h2>Overall Introduction</h2>
 
@@ -37,7 +90,7 @@
         The following two references provided us insight into how stress and other lifestyle factors can influence sleep quality in undergraduate students:
     </p>
     <ol>
-        <li><a href="https://link.springer.com/article/10.1186/s40359-024-01976-3">Effects of perceived stress on college students’ sleep quality: a moderated chain mediation model</a></li>
+        <li><a href="https://link.springer.com/article/10.1186/s40359-024-01976-3">Effects of perceived stress on college students' sleep quality: a moderated chain mediation model</a></li>
         <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9670772/">Lifestyle factors associated with poor sleep quality among undergraduate dental students at a Malaysian private university</a></li>
     </ol>
 
@@ -122,11 +175,14 @@
         The interactive map below visualizes average sleep quality and study time across different regions. The dropdown menu
         can be used to switch between either a worldwide or a U.S.-focused view. For either mode, you can hover over the map to display sleep quality, 
         sleep duration, and study time for any location where data was collected from.
-
     </p>
 
     <div class='container' style="overflow: hidden;">
-        <iframe src="map.html" width="100%" height="520px" frameborder="0" scrolling="no"></iframe>
+        <div class="graph-container">
+            <div class="iframe-wrapper" style="width: 1100px; height: 570px">
+                <iframe src="map.html" width="100%" height="570px" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
     </div>
     
     <h3>What Our Data Reveals at a Global Level</h3>
@@ -156,12 +212,15 @@
 
     <h3>Sleep Quality by Factor</h3>
 
-    <div class='container'>
-        <div class='image'>
-            <iframe src="heatmap.html" width="100%" height="500px" frameborder="0"></iframe>
+    <div class="graph-section with-image">
+        <div class="graph-container">
+            <div class="iframe-wrapper" style="width: 670px">
+                <iframe src="heatmap.html" width="100%" height="500px" frameborder="0"></iframe>
+            </div>
         </div>
-        <div class='text'>
+        <div class="graph-description">
             <p>
+                <strong>Heatmap: Hours of Sleep vs Sleep Quality</strong>
                 The second visualization we will explore is a heatmap displaying the relationship between hours of sleep 
                 and self-reported sleep quality among participants in our dataset. Each cell represents the number of 
                 participants who reported a given combination of sleep hours and sleep quality, with darker teal indicating a 
@@ -175,9 +234,15 @@
         </div>
     </div>
 
-    <div class='container' style="gap: 30px">
-        <div class='text'>
+    <div class="graph-section with-image">
+        <div class="graph-container">
+            <div class="iframe-wrapper" style="height: 420px; width: 600px">
+                <iframe src="scatter.html" width="100%" height="420px" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="graph-description">
             <p>
+                <strong>Scatter Plot: Study Time vs Hours of Sleep by Major</strong>
                 The next visualization we created is an interactive scatter plot that displays the relationship between study time and
                 average hours of sleep per night. The scatter plot is color-coded by area of study, as we categorized self-reported majors
                 into various broader categories. The dropdown menu allows users to select a particular area of study, and there is also a tooltip
@@ -188,21 +253,18 @@
                 support this. This suggests that sleep habits among students may be driven by more individual lifestyle factors than academic workload.
             </p>
         </div>
-        <div class='image'>
-            <iframe src="scatter.html" width="100%" height="420px" frameborder="0"></iframe>
-        </div>
     </div>
 
-    <h3>
-        Hours of Studying, Physical Activity, Sleep, and Screen Time by Sex
-    </h3>
-    <div class="container">
-        <div class='image' id='chart'>
+    <h4 style="display: flex; justify-content: center;">Hours of Studying, Physical Activity, Sleep, and Screen Time by Sex</h4>
+    
+    <div class="graph-section with-image">
+        <div class="graph-container" id='chart'>
             <script src='https://d3js.org/d3.v7.min.js'></script>
             <script src='main.js'></script>
         </div>
-        <div class='text'>
+        <div class="graph-description">
             <p>
+                <strong>Stacked Bar Chart: Time Allocation by Sex</strong>
                 The next figure is a stacked barplot that displays hours of sleep, study time, physical activity, and screen time 
                 by sex. This was created using D3. Overall, male participants average slightly more total hours across all categories 
                 than female participants, with males at approximately 23 hours compared to females at roughly 21 hours. The most meaningful
@@ -215,8 +277,16 @@
         </div>
     </div>
 
-    <div class="container">
-            <p>The four histograms visualize the distributions of key variables in the dataset: daily screen time (in hours), sleep quality (rated from 1 to 10),
+        <h4 style="display: flex; justify-content: center;">Lifestyle Factors Distributions</h4>
+
+    <div class="graph-section with-image">
+        <div class="graph-container">
+            <img src="histograms_lifestyle.png" height="500px" alt="Histograms: Screen Time, Sleep Quality, Caffeine, and Heart Rate" title="Histograms of Lifestyle Factor" style="display: block;"/>
+        </div>
+        <div class="graph-description">
+            <p>
+                <strong>Histograms: Distribution of Key Lifestyle Variables</strong>
+                The four histograms visualize the distributions of key variables in the dataset: daily screen time (in hours), sleep quality (rated from 1 to 10),
                 daily caffeine consumption (in mg), and resting heart rate (in BPM). Screen time shows a right-skewed distribution, with most values concentrated between about 4 and 10 hours 
                 and a few high outliers exceeding 15 hours. Sleep quality appears roughly symmetric and centered around a mean of approximately 6 to 8, indicating that most participants report 
                 average to good sleep. Caffeine consumption is highly right-skewed, with a low median but several extreme outliers reaching above 200–300 mg, suggesting that while most individuals consume 
@@ -227,7 +297,7 @@
                 This indicates that people tend to have similar sleep outcomes despite differences in their daily habits, which raises questions about what factors actually drive changes in sleep quality and connects 
                 to our research on understanding these influences.
             </p>
-            <img src="histograms_lifestyle.png" width="55%" alt="histogram" style="float: right; margin-left: 20px; margin-bottom: 10px;"/>
+        </div>
     </div>
 
     <h2>Summary and Additional Work</h2>
@@ -247,6 +317,7 @@
         study time associated with lower sleep quality, while in others the two seem to coexist. Taken together, the global and lifestyle data both point
         to the same conclusion: sleep quality is a multifaceted outcome influenced not just by time spent studying, but also by environment, culture, 
         and daily routines.
+    </p>
     <p>
         If we were to continue this research, a larger and more diverse dataset would allow for stronger conclusions. A lot of our current dataset was
         collected from students living in Boston, and other locations on our map had fewer participants. If we could increase our data, we might start
@@ -255,4 +326,3 @@
 
 </body>
 </html>
-    

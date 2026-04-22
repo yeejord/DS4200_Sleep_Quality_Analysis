@@ -7,25 +7,30 @@ let data = [
   const keys   = ['Physical Activity', 'Study Time', 'Screen Time', 'Sleep'];
   const colors = ['#dbdb8d', '#aec7e8', '#ff9896', '#ffbb78'];
   
-  let width  = 600,
+  let width  = 700, 
       height = 400;
   
-  let margin = { top: 50, bottom: 60, left: 60, right: 160 };
+  let margin = { top: 60, bottom: 80, left: 80, right: 200 };
   
-  let svg = d3.select('body')
+  let svg = d3.select('#chart')
     .append('svg')
     .attr('width',  width)
-    .attr('height', height);
+    .attr('height', height)
+    .style('background-color', 'white') 
+    .style('border-radius', '8px')
+    .style('box-shadow', '0 2px 8px rgba(0,0,0,0.1)');
 
   let tooltip = d3.select('body')
     .append('div')
     .style('position',         'absolute')
-    .style('background',       'rgba(0,0,0,0.75)')
+    .style('background',       'rgba(0,0,0,0.85)')
     .style('color',            '#fff')
-    .style('padding',          '8px 12px')
-    .style('font-size',        '13px')
+    .style('padding',          '10px 14px')
+    .style('font-size',        '14px')
+    .style('border-radius',    '4px')
     .style('pointer-events',   'none')
-    .style('opacity',          0);
+    .style('opacity',          0)
+    .style('z-index',          '1000');
   
   let stack  = d3.stack().keys(keys);
   let series = stack(data);
@@ -42,26 +47,39 @@ let data = [
     .padding(0.35);
 
   let yAxis = svg.append('g')
-    .call(d3.axisLeft(yScale).ticks(6))
-    .attr('transform', `translate(${margin.left}, 0)`);
+    .call(d3.axisLeft(yScale).ticks(8))
+    .attr('transform', `translate(${margin.left}, 0)`)
+    .style('font-size', '14px')
+    .style('color', '#333');
   
   let xAxis = svg.append('g')
     .call(d3.axisBottom(xScale).tickSize(0))
-    .attr('transform', `translate(0, ${height - margin.bottom})`);
+    .attr('transform', `translate(0, ${height - margin.bottom})`)
+    .style('font-size', '14px')
+    .style('color', '#333');
+  
+  // Style axis lines
+  svg.selectAll('.domain').style('stroke', '#999').style('stroke-width', '2px');
   
   // Input axis labels
   svg.append('text')
     .attr('x', -(height / 2))
-    .attr('y', 18)
+    .attr('y', 20)
     .attr('transform', 'rotate(-90)')
     .attr('text-anchor', 'middle')
+    .attr('font-size', '16px')
+    .attr('fill', '#333')
+    .attr('font-weight', 'bold')
     .text('Average hours per day');
   
   svg.append('text')
     .attr('x', margin.left + (width - margin.left - margin.right) / 2)
-    .attr('y', height - 10)
+    .attr('y', height - 20)
     .attr('text-anchor', 'middle')
-    .text('Sex');
+    .attr('font-size', '16px')
+    .attr('fill', '#333')
+    .attr('font-weight', 'bold')
+    .text('Gender');
   
   let groups = svg.selectAll('g.series')
     .data(series)
@@ -79,6 +97,7 @@ let data = [
     .attr('width',  xScale.bandwidth())
     .attr('height', d => yScale(d[0]) - yScale(d[1]))
     .style('cursor', 'pointer')
+    .style('transition', 'filter 0.2s ease')
     .on('mouseover', function(event, d) {
         const key    = d3.select(this.parentNode).datum().key;
         const rawVal = d.data[key];
@@ -88,12 +107,12 @@ let data = [
         tooltip
             .style('opacity', 1)
             .html(`
-                <strong>${d.data.gender}</strong><br/>
-                <span style="color:#ccc">${key}</span><br/>
-                ${rawVal.toFixed(2)} hrs &nbsp;|&nbsp; ${pct}%
+                <strong style="font-size: 15px">${d.data.gender}</strong><br/>
+                <span style="color:#bbb; font-size: 13px">${key}</span><br/>
+                <span style="font-size: 14px">${rawVal.toFixed(2)} hrs &nbsp;|&nbsp; ${pct}%</span>
             `);
 
-        d3.select(this).style('filter', 'brightness(1.2)');
+        d3.select(this).style('filter', 'brightness(0.85)').style('stroke', '#333').style('stroke-width', '2px');
     })
     .on('mousemove', function(event) {
         tooltip
@@ -102,15 +121,25 @@ let data = [
     })
     .on('mouseout', function() {
         tooltip.style('opacity', 0);
-        d3.select(this).style('filter', null);
+        d3.select(this).style('filter', null).style('stroke', 'none');
     });
   
   // Create the legend
   let legend = svg.append('g')
-    .attr('transform', `translate(${width - margin.right + 16}, ${margin.top})`);
+    .attr('transform', `translate(${width - margin.right + 20}, ${margin.top})`);
   
   keys.forEach((key, i) => {
-    let row = legend.append('g').attr('transform', `translate(0, ${i * 24})`);
-    row.append('rect').attr('width', 12).attr('height', 12).attr('fill', colors[i]);
-    row.append('text').attr('x', 18).attr('y', 10).style('font-size', '12px').text(key);
+    let row = legend.append('g').attr('transform', `translate(0, ${i * 28})`);
+    row.append('rect')
+      .attr('width', 16)
+      .attr('height', 16)
+      .attr('fill', colors[i])
+      .attr('rx', 2);
+    row.append('text')
+      .attr('x', 24)
+      .attr('y', 13)
+      .style('font-size', '14px')
+      .style('fill', '#333')
+      .style('font-weight', '500')
+      .text(key);
   });
