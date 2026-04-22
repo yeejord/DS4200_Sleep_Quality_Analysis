@@ -1,6 +1,7 @@
 html {
     background-color: #001f3f;
     color: white;
+    scroll-padding-top: 110px; 
 }
 
 body {
@@ -156,6 +157,30 @@ a:hover {
     border: none;
     width: 100%;
     height: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #001f3f;
+    border-bottom: 2px solid #d4dfe6; 
+    padding: 15px 20px;
+    margin-bottom: 15px;                         
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;            
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Responsive design for smaller screens */

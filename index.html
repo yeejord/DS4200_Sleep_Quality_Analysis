@@ -6,6 +6,52 @@
     <title>Sleep Quality and its Related Factors Study</title>
     <link href="style.css" rel="stylesheet" />
     <style>
+        /* Sticky Navigation Menu */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #001f3f;
+            border-bottom: 2px solid #E8F0F5;
+            padding: 15px 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            color: #E8F0F5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 3px;
+        }
+
         /* Full-width graph sections */
         .graph-section {
             width: 100%;
@@ -46,9 +92,24 @@
             flex-direction: column;
             gap: 0;
         }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Sticky Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#overall-intro">Introduction</a></li>
+            <li><a href="#data-intro">Data</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="#summary">Summary</a></li>
+        </ul>
+    </nav>
 
     <div>
         <span style="display: flex; align-items: center; justify-content: center; gap: 10px;">
@@ -58,7 +119,7 @@
         </span>
         <span>
             <h4 style="display: flex; align-items: center; justify-content: center; gap:20px;">
-                <sn>Northeastern University</span>
+                <span>Northeastern University</span>
                 <span>|</span>
                 <span>DS4200 Final Project</span>
                 <span>|</span>
@@ -67,7 +128,7 @@
         </span>
     </div>
 
-    <h2>Overall Introduction</h2>
+    <h2 id="overall-intro">Overall Introduction</h2>
 
     <p>
         Understanding sleep quality is crucial for assessing the overall health and well-being of individuals, particularly during key 
@@ -94,7 +155,7 @@
         <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9670772/">Lifestyle factors associated with poor sleep quality among undergraduate dental students at a Malaysian private university</a></li>
     </ol>
 
-    <h2>Introduction to the Data</h2>
+    <h2 id="data-intro">Introduction to the Data</h2>
 
     <p> The dataset was collected via a survey consisting of 100 responses across 14 variables. The survey was sent out to college-aged 
         undergraduate students across many different cites, states, and countries globally. The survey was conducted using a Google Form,
@@ -168,7 +229,7 @@
             </table>
         </div>
 
-    <h2>Sleep Quality Data Analysis</h2>
+    <h2 id="analysis">Sleep Quality Data Analysis</h2>
     
     <h3>Geographically</h3>
     <p>
@@ -176,6 +237,8 @@
         can be used to switch between either a worldwide or a U.S.-focused view. For either mode, you can hover over the map to display sleep quality, 
         sleep duration, and study time for any location where data was collected from.
     </p>
+
+    <h4 style="display: flex; justify-content: center;">Average Sleep Quality Across the Globe</h4>
 
     <div class='container' style="overflow: hidden;">
         <div class="graph-container">
@@ -212,6 +275,8 @@
 
     <h3>Sleep Quality by Factor</h3>
 
+    <h4 style="display: flex; justify-content: center;">Hours of Sleep vs Sleep Quality</h4>
+
     <div class="graph-section with-image">
         <div class="graph-container">
             <div class="iframe-wrapper" style="width: 670px">
@@ -233,6 +298,8 @@
             </p>
         </div>
     </div>
+
+    <h4 style="display: flex; justify-content: center;">Study Time and Hours of Sleep by Major</h4>
 
     <div class="graph-section with-image">
         <div class="graph-container">
@@ -277,7 +344,7 @@
         </div>
     </div>
 
-        <h4 style="display: flex; justify-content: center;">Lifestyle Factors Distributions</h4>
+    <h4 style="display: flex; justify-content: center;">Lifestyle Factors Distributions</h4>
 
     <div class="graph-section with-image">
         <div class="graph-container">
@@ -300,7 +367,7 @@
         </div>
     </div>
 
-    <h2>Summary and Additional Work</h2>
+    <h2 id="summary">Summary and Additional Work</h2>
 
     <p>
         Looking across all of our visualizations, the main takeaway is that sleep quality among college students does not appear to be 
@@ -323,6 +390,35 @@
         collected from students living in Boston, and other locations on our map had fewer participants. If we could increase our data, we might start
         to see stronger trends related to different places, majors, or factors that we're not quite able to see now.
     </p>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('h2[id]');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let currentSection = ''; // Start with nothing
+            
+            // Check if at bottom of page
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+                currentSection = 'summary';
+            } else {
+                // Find which section you're currently in
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 200) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+            }
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (currentSection && link.getAttribute('href').slice(1) === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
